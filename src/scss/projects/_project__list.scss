@@ -1,0 +1,35 @@
+@use "../variables" as *;
+
+.projects__list {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: $color-blue;
+    gap: 40px;
+    justify-content: space-between;
+
+    .projects__item {
+        display: flex;
+        flex-direction: row;
+        width: 141px;
+        height: 50px;
+
+        .item__number {
+            color: white;
+            font-family: $font-family;
+            font-size: 21px;
+            line-height: 24.61px;
+            margin: 0 0 0 20px;
+        }
+
+        .item__text {
+            color: white;
+            font-family: $font-family;
+            font-size: 16px;
+            line-height: 26.25px;
+            margin: 0 0 0 20px;
+        }
+    }
+}

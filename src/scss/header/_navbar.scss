@@ -1,0 +1,37 @@
+@use "../variables" as *;
+
+.navbar {
+    margin-bottom: 162px;
+    
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 42px;
+
+        .navbar__item{
+            font-family: $font-family;
+            font-weight: $header-fontweight;
+            font-size: $header-fontsize;
+            text-decoration: none;
+            color: black;
+            line-height: 26.25px;
+            letter-spacing: 0.1em;
+            gap: 42px;
+            &--active{
+                font-family: $font-family;
+                font-weight: $header-fontweight;
+                font-size: $header-fontsize;
+                color: $active-color;
+                text-decoration: none;
+                line-height: 26.25px;
+                letter-spacing: 0.1em;
+            }
+        }
+        @media (min-width: 375px) and (max-width: 649px){
+            justify-content: space-evenly;
+            justify-items: center;
+        }
+    }
+}

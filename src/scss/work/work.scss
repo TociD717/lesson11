@@ -1,0 +1,27 @@
+@use "../variables" as *;
+
+.work {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: $secondary-color;
+    &__header {
+        display: flex;
+        justify-content: center;
+        font-size: $big-header-fontsize;
+        line-height: 37.5px;
+        font-family: $font-family;
+        margin: 0;
+    }
+    &__text {
+        display: flex;
+        justify-content: center;
+        font-size: $header-fontsize;
+        font-weight: $content-fontweight;
+        line-height: 26.25px;
+        font-family: $font-family;
+        color: $text-color;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 57px;
+    }
+}
